@@ -1,5 +1,5 @@
 func binarySearch<T: Comparable>(for key: T, in arr: [T], withRange range: Range<Int>) -> Int? {
-  if range.lowerBound > range.upperBound { 
+  guard range.lowerBound < range.upperBound else { 
     return nil 
   }
 
